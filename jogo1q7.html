@@ -9,10 +9,22 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-116940676-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
 </head>
 <body>
 	<header class="red darken-2 center-align">
-		<a href="index.html">Quiz IHC</a>
+		<a href="index.html" onclick="ga('send', 'event', 'header', 'inicio', 'jogo1q7');">Quiz IHC</a>
 	</header>
 	<main class="center-align">
 		<div class="row">
@@ -48,10 +60,10 @@
 				</form>
 			</div>
 			<div class="col s6">
-				<a class="waves-effect blue darken-1 btn" href="jogo1q8.html">Próximo</a>
+				<a class="waves-effect blue darken-1 btn" href="jogo1q8.html" onclick="ga('send', 'event', 'jogo1', 'proximo', 'q7');">Próximo</a>
 			</div>
 			<div class="col s6 btn2">
-				<a href="jogo1q8.html">Pular</a>
+				<a href="jogo1q8.html" onclick="ga('send', 'event', 'jogo1', 'pular', 'q7');">Pular</a>
 			</div>
 	    </div>
 	</main>
