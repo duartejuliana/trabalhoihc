@@ -22,14 +22,14 @@
 	</script>
 	<!-- End Google Analytics -->
 </head>
-<body>
+<body onload="verResultado()">
 	<header class="red darken-2 center-align">
 		<a href="index.html" onclick="ga('send', 'event', 'header', 'inicio', 'resultado');">Quiz IHC</a>
 	</header>
 	<main class="center-align">
 		<div class="row">
 			<div class="col s12 intro">
-				Resultado
+				Resultado: Você fez <span id="resultado"></span> pontos!
 			</div>
 			<div class="col s12">
 				<a class="waves-effect blue darken-1 btn" href="index.html" onclick="ga('send', 'event', 'resultado', 'inicio', 'resultado');">Início</a>

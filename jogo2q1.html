@@ -21,6 +21,10 @@
 	ga('send', 'pageview');
 	</script>
 	<!-- End Google Analytics -->
+
+	<script>
+		localStorage.setItem('pontos', 0);
+	</script>
 </head>
 <body style="background-color:yellow">
 	<header class="red darken-2 center-align">
@@ -47,7 +51,7 @@
 					</p>
 					<p>
 						<label>
-							<input name="group1" type="radio"/>
+							<input name="group1" type="radio" id="certo"/>
 							<span>Sessenta e quatro</span>
 						</label>
 					</p>
@@ -60,7 +64,7 @@
 				</form>
 			</div>
 			<div class="col s6">
-				<a class="waves-effect blue darken-1 btn" href="jogo2q2.html" onclick="ga('send', 'event', 'jogo2', 'proximo', 'q1');">Próximo</a>
+				<a class="waves-effect blue darken-1 btn" href="jogo2q2.html" onclick="ga('send', 'event', 'jogo2', 'proximo', 'q1');confere();">Próximo</a>
 			</div>
 			<div class="col s6 btn2">
 				<a href="jogo2q2.html" onclick="ga('send', 'event', 'jogo2', 'pular', 'q1');">Pular</a>
